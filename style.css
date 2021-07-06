@@ -11,7 +11,7 @@
     --text-color: #403A3A; 
     --text-color-light: #707070 ; 
     --container-light: #FAFAFA; 
-    --container-color: #FAFAFA;
+    --container-color: ##00563B;
     --container-color-alt: #F0EFEF;
     --container-light-alt: #F0EFEF ; 
     --body-color: #FCFCFC ; 
@@ -270,8 +270,9 @@
     }
 
     .bd-grid{
-        display: grid;
-        gap: 1.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .l-header{
@@ -372,25 +373,23 @@
         text-align: center;
     }
 
-    .home__img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        justify-self: center;
-        /* margin-bottom: var(--mb-1); */
-        background-position:50% 50%;
-        background-repeat:no-repeat;
-        overflow: hidden;
-        position: relative;
-    }
-
     .home__img-cont{
-        background-image: url(./assets/Snapchat-192563602.jpg);
-        width: 100px;
-        height: 100px;
+        background-color: cornflowerblue;
         border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .home__img{
+        width: 200px;
+        height: 200px;
         justify-self: center;
-        overflow: hidden;
+        border-radius: 50%;
+        /* background-position: center center;  */
+        /* background-size: cover; */
+        /* margin-bottom: var(--mb-1); */
+        object-fit: contain;
        
     }
 
