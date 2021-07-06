@@ -513,10 +513,10 @@
 
     /* SKILLS AND LANGUAGES */
 
-    .skills__content, 
+    /* .skills__content, 
     .languages__content{
-        grid-template-columns: repeat(2, 1fr);
-    }
+        grid-template-columns: repeat(4, 1fr);
+    } */
  
 
     .languages__content{
@@ -528,6 +528,7 @@
     .languages__name{
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-bottom: var(--mb-3);
     }
 
@@ -657,11 +658,11 @@
         }
 
         .languages__content{
-            grid-template-columns: repeat(3, max-content);
+            grid-template-columns: repeat(4, max-content);
             column-gap: 3.5rem;
         }
         .interests__container{
-            grid-template-columns: repeat(3, max-content);
+            grid-template-columns: repeat(4, max-content);
             column-gap: 3.5rem;
         }
     }
