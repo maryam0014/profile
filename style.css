@@ -379,15 +379,16 @@
         justify-content: center;
     }
  
-.home__img-cont{
-    background-color: cornflowerblue;
+/* .home__img-cont{
+    
     border-radius: 50%;
     width: 200px;
     height: 200px;
     display: flex;
     align-items: center;
-}
+} */
 .home__img{
+    background-color: cornflowerblue;
     width: 200px;
     height: 200px;
     justify-self: center;
@@ -395,7 +396,7 @@
     /* background-position: center center;  */
     /* background-size: cover; */
     /* margin-bottom: var(--mb-1); */
-    object-fit: contain;
+    object-fit: cover;
    
 }
 
