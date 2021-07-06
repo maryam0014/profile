@@ -105,5 +105,5 @@ resumeButton.addEventListener('click', () => {
     generateResume()
 
     // 3 the .scale-cv is removed after 5 seconds
-    setTimeout(reomveScale, 5000)
+    setTimeout(reomveScale, 2000)
 })
