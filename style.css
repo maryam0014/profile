@@ -11,7 +11,7 @@
     --text-color: #403A3A; 
     --text-color-light: #707070 ; 
     --container-light: #FAFAFA; 
-    --container-color: ##00563B;
+    --container-color: #FAFAFA;
     --container-color-alt: #F0EFEF;
     --container-light-alt: #F0EFEF ; 
     --body-color: #FCFCFC ; 
@@ -270,9 +270,8 @@
     }
 
     .bd-grid{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        display: grid;
+        gap: 1.5rem;
     }
 
     .l-header{
@@ -373,25 +372,32 @@
         text-align: center;
     }
 
-    .home__img-cont{
-        background-color: cornflowerblue;
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
+    .home__data.bd-grid{
         display: flex;
         align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
-    .home__img{
-        width: 200px;
-        height: 200px;
-        justify-self: center;
-        border-radius: 50%;
-        /* background-position: center center;  */
-        /* background-size: cover; */
-        /* margin-bottom: var(--mb-1); */
-        object-fit: contain;
-       
-    }
+ 
+.home__img-cont{
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.home__img{
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    border-radius: 50%;
+    /* background-position: center center;  */
+    /* background-size: cover; */
+    /* margin-bottom: var(--mb-1); */
+    object-fit: contain;
+   
+}
 
     .home__title{
         font-size: var(--h1-font-size);
@@ -512,10 +518,10 @@
 
     /* SKILLS AND LANGUAGES */
 
-    /* .skills__content, 
+    .skills__content, 
     .languages__content{
-        grid-template-columns: repeat(4, 1fr);
-    } */
+        grid-template-columns: repeat(2, 1fr);
+    }
  
 
     .languages__content{
@@ -527,7 +533,6 @@
     .languages__name{
         display: flex;
         align-items: center;
-        justify-content: center;
         margin-bottom: var(--mb-3);
     }
 
@@ -657,11 +662,11 @@
         }
 
         .languages__content{
-            grid-template-columns: repeat(4, max-content);
+            grid-template-columns: repeat(3, max-content);
             column-gap: 3.5rem;
         }
         .interests__container{
-            grid-template-columns: repeat(4, max-content);
+            grid-template-columns: repeat(3, max-content);
             column-gap: 3.5rem;
         }
     }
